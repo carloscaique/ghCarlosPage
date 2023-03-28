@@ -34,7 +34,7 @@ body{
 
 .cabecalho__menu__link{
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -43,6 +43,7 @@ body{
 .tituloDestaqueDeveloper{
     color: var(--cor-terciaria);
     padding: 10px;
+    transition: 0.5s;
 }
 
 .tituloDestaqueDeveloper:hover{
@@ -51,6 +52,7 @@ body{
 
 .texto-destaque{
     color: var(--cor-terciaria);
+    transition: 0.5s;
 }
 
 .texto-destaque:hover{
@@ -60,6 +62,7 @@ body{
 
 .texto-destaque-areasDeInteresse{
     color: var(--cor-terciaria);
+    transition: 0.5s;
 }
 
 .texto-destaque-areasDeInteresse:hover{
@@ -69,6 +72,7 @@ body{
 
 .texto-destaque-mandarim{
     color: red;
+    transition: 0.5s;
 }
 
 .texto-destaque-mandarim:hover{
@@ -78,6 +82,7 @@ body{
 
 .texto-destaque-ingles{
     color: #0382d6;
+    transition: 0.5s;
 }
 
 .texto-destaque-ingles:hover{
@@ -87,6 +92,7 @@ body{
 
 .texto-destaque-espanhol{
     color: darkorange;
+    transition: 0.5s;
 }
 
 .texto-destaque-espanhol:hover{
@@ -99,10 +105,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .apresentacao__conteudo{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -110,12 +117,12 @@ body{
 }
 
 .apresentacao__conteudo__titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte-principal);
 }
 
 .apresentacao__conteudo__texto{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
 }
 
@@ -130,7 +137,7 @@ body{
 .apresentacao__links__subtitulo{
     font-family: var(--fonte-principal);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .apresentacao__links__link{
@@ -139,19 +146,24 @@ body{
     justify-content: center;
     gap: 16px;
     border: 2px solid var(--cor-terciaria);
-    width: 378px;
+    width: 50%;
     text-align: center;
     border-radius: 16px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
+    transition: 0.5s;
 }
 
 .apresentacao__links__link:hover{
     background-color: var(--cor-hover);
+}
+
+.aprsentacao__imagem{
+    width: 50%;
 }
 
 .rodape {
@@ -160,9 +172,35 @@ body{
     background-color: var(--cor-terciaria);
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
+
+/* SOBRE MIM */
+
+.perfil__titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-principal);
+    transition: 0.5s;
+}
+
+.perfil__titulo:hover{
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__perfil{
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil__aprsentacao__imagem{
+    padding: 10% 0% 0%;
+}
+
+.perfil__aprsentacao__imagem__mariachis{
+    padding: 10% 0% 0%;
+}
+
 
 /* CURRICULO */
 
@@ -176,9 +214,10 @@ body{
 }
 
 .apresentacao__curriculo__titulo{
-    font-size: 30px;
+    font-size: 1.9rem;
     font-family: var(--fonte-principal);
     display: inline;
+    transition: 0.5s;
 }
 
 .apresentacao__curriculo__titulo:hover{
@@ -187,13 +226,14 @@ body{
 
 
 .apresentacao__curriculo__perfil{
-    font-size: 23px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
 }
 
 .apresentacao__curriculo__anhembi__cursos__titulo{
-    font-size: 25px;
+    font-size: 1.5rem;
     font-family: var(--fonte-principal);
+    transition: 0.5s;
 }
 
 .apresentacao__curriculo__anhembi__cursos__titulo:hover{
@@ -201,13 +241,14 @@ body{
 }
 
 .apresentacao__curriculo__anhembi__cursos{
-    font-size: 23px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
 }
 
 .apresentacao__curriculo__alura__cursos__titulo{
-    font-size: 25px;
+    font-size: 1.5rem;
     font-family: var(--fonte-principal);
+    transition: 0.5s;
 }
 
 .apresentacao__curriculo__alura__cursos__titulo:hover{
@@ -215,30 +256,50 @@ body{
 }
 
 .apresentacao__curriculo__alura__cursos{
-    font-size: 23px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
 }
 
 .apresentacao__curriculo__idiomas{
-    font-size: 25px;
+    font-size: 1.5rem;
     font-family: var(--fonte-principal);
 }
 
 .apresentacao__curriculo__idiomas__cursos{
-    font-size: 23px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
 }
 
 .apresentacao__curriculo__experiencia{
-    font-size: 25px;
+    font-size: 1.5rem;
     font-family: var(--fonte-principal);
 }
 
 .apresentacao__curriculo__experiencia__experiencia{
-    font-size: 23px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
 }
 
 .link__mariachis{
     text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    
+    .cabecalho{
+        padding: 10%;
+    }
+    
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
 }
